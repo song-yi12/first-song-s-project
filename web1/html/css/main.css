@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* RESET -S */
+* {
+    margin: 0;padding: 0;border: 0;
+    list-style: none;
+}
+a{text-decoration: none; color:inherit}
+/* RESET -E */
+
+body {
+    font: 14px/18px 'Noto Sans KR', '돋움', dotum, AppleGothic, sans-serif; color: #555;
+}
+#wrap {
+    width: 1200px; 
+    margin: 0 auto;
+}
+
+/* -------------------- 
+HEADER - S
+-------------------- */
+.header {
+    height: 75px; 
+    margin: 0 auto; padding: 25px 50px 0 0 ;
+    background-color: bisque;
+}
+.header > .logo{
+    float: left;
+    width: 200px; height: 50px;
+}
+.header > .logo > a{
+    display: block;
+    width: 100%; height: 50px;
+    font-size: 20px; line-height: 50px;
+    background-color: aqua;
+}
+.header > .gnb{
+    float: right;
+    margin-top: 5px;
+}
+.header > .gnb > ul{}
+.header > .gnb > ul > .depth1{
+    float: left;
+}
+.header > .gnb > ul > .depth1 > a{
+    display: block;
+    height: 40px;
+    padding: 0 50px;
+    font-size: 20px; line-height: 40px;
+    background-color: aqua;
+}
+.header > .gnb > ul > .depth1 > .depth2{
+    display: none;
+}
+.header > .gnb > ul > .depth1 > .depth2 > li{}
+.header > .gnb > ul > .depth1 > .depth2 > li > a{}
+
+/* -------------------- 
+HEADER - E
+-------------------- */
+
+/* -------------------- 
+MAIN - S
+-------------------- */
+.main {}
+.main > .visual{
+    height: 300px;
+    background-color: #f00;
+}
+.main > .section{
+    overflow: hidden;
+    padding: 10px 0;
+}
+.main > .section > div{
+    float: left;
+    width: 380px; height: 180px;
+}
+.main > .section > div + div {
+    margin-left: 30px;
+}
+.main > .section > .notice{
+    background-color: aqua;
+}
+.main > .section > .banner{
+    background-color: bisque;
+}
+.main > .section > .quick{
+    background-color:blueviolet;
+}
+
+/* -------------------- 
+MAIN - E
+-------------------- */
+
+/* -------------------- 
+FOOTER - S
+-------------------- */
+.footer {
+    height: 100px;
+    line-height: 100px;
+    background-color: #333;
+}
+.footer > .f-logo{
+    float: left;
+    width: 200px;
+    margin-right: 200px;
+    font-size: 18px; color: #999;
+}
+.footer > .f-sns{
+    float: right;
+}
+.footer > .f-sns > li {
+    float: left;
+}
+.footer > .f-sns > li + li {
+    margin-left: 30px;
+}
+.footer > .f-sns > li > a{
+    color: #777;
+}
+.footer > .f-copy{
+    float: left;
+    font-size: 12px; color: #555;
+}
+
+/* -------------------- 
+FOOTER - E
+-------------------- */

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/*  RESET - S */
+*{
+    margin: 0; padding: 0; border: 0;
+    list-style: none;
+}

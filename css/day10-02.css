@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* 초기화 */
+*{
+    margin: 0;padding: 0;border: 0;
+    list-style: none;
+}
+
+.header {
+    width: 1200px; height: 100px; margin: 0 auto;
+    border: 5px solid #f00;
+}
+
+.tnb{
+    width: 100px; height: 50px;
+    background-color: aqua;
+    position: absolute; right: 0; top: 0;
+}
+.han2 {
+    width: 1400px; margin: 0 auto;
+    position: relative; 
+ border: 1px solid #000;   
+}
+.han1 {
+    width: 1600px; margin: 0 auto;
+     
+ border: 1px solid #f90;   
+}
