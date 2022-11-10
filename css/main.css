@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css);
+
+/* COMMON -S */
+
+a{
+  text-decoration: none; color: inherit;
+}
+
+.skip-nav {}
+.skip-nav a {
+  /* float , position: absoulute;를 적용하면 inline-block처럼 변한다 */
+  /* display: block; */
+  width: 100%; height: 30px;
+  background-color: #f90;
+  line-height: 30px; color: #fff; text-align: center;
+  position: absolute; left: 0; top: -100px;
+}
+
+.skip-nav a:focus {
+  top: 0;
+}
+
+.inner {
+  width: 1180px; margin: 0 auto;
+}
+
+body {
+  font: 16px / 1 'NanumSquare','돋움' ,dotum, AppleGothic ,sans-serif; color: #555; letter-spacing: -1px; /* << 자간 */
+}
+
+/* COMMON -E */
+
+/* HEADER -S */
+/* margin-top은 극단적으로 써야할때만 써라 */
+/* position, float 주면 인라인블록처럼 행동해서 w를 100%로 줘야함 */
+#header {
+  position: fixed; left: 0; top: 0;
+  width: 100%; height: 70px;
+}
+.logo {
+  float: left;
+  margin: 17px 45px 0 0;
+  width: 101px; height: 37px;
+}
+/* hight를 주기 위해서는
+1. 모든 조상에 hight를 100% 지정한다.
+2. position을 지정한다. 
+*/
+.logo a {
+  display: block;
+  width: 100%; height: 37px;
+  /* 텍스트를 안보이는 영역으로 던질 때 text-indent */
+  text-indent: -9999px;
+  background-image: url(../img/logo.png);
+  /* 아이콘 하나로 묶어서 포지션으로 조절 */
+}
+
+/* GNB -S */
+.gnb {
+  float: left;
+}
+.gnb > ul {
+
+}
+.gnb .depth1 {
+  float: left;
+}
+/* 컬러 줄 위치 잘 선정해야함 */
+.gnb .depth1 > a {
+  display: block;
+  padding: 0 33px;
+  font-weight: 700; font-size: 18px; line-height: 70px; color: #fff;
+}
+.gnb .depth1 > .depth2 {
+  display: none;
+}
+.gnb .depth1 > .depth2 li {
+
+}
+.gnb .depth1 > .depth2 a {
+
+}
+.gnb .gnb-bg {}
+/* GNB -E */
+
+/* TNB -S */
+.tnb {
+  float: right;
+  border: 1px solid tomato;
+  color: rgba(255,255,255,0.5);
+}
+.tnb .tnb-menu {
+  float: left;
+}
+.tnb .tnb-menu a {}
+.tnb .tnb-login {
+  float: left;
+}
+.tnb .tnb-login li {
+  float: left;
+}
+.tnb .tnb-login li:last-child {
+  display: none;
+}
+.tnb .tnb-login a {}
+
+.tnb .tnb-sch {
+  float: left;
+}
+.tnb .tnb-sch p {}
+.tnb .tnb-sch p a {}
+.tnb .tnb-sch-wrap {
+  display: none;
+}
+/* TNB -S */
+
+/* HEADER -E */
+
+
+
+/* MAIN -S */
+/* VISUAL -S */
+.visual {
+  /* 비주얼이 1180에 멈추려면 최소 단위(min-w)를 정해야 함 */
+  /* 최대값(~이상커지지마라)는 max-w */
+  width: 100%; height: 860px; min-width: 1180px;
+  background: url(../img/img_visual3.jpg) no-repeat center center;
+}
+/* VISUAL -E */
+/* MAIN -E */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
